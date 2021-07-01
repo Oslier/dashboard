@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #050e2d;
+}
+
+.navbar {
+  width: 100%;
+  height: 100vh;
+  background-color: #01081f;
+}
+
+.navbar .logo {
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.7rem 2rem;
+  color: #fff;
+}
+
+.navbar a i {
+  padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+  background-color: #0c1635;
+}
+
+.dashboard h1 {
+  margin: 1.5rem;
+}
+
+.dashboard .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.dashboard .container .card {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #01081f;
+}
+
+.dashboard .container .cardchart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .container .cardchart h2 {
+  padding-bottom: 1rem;
+  font-size: small;
+}
+
+.dashboard .container .cardchart span {
+  font-size: x-large;
+}
+
+.dashboard .container .chart {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+}
+
+.dashboard .container .acquisitions {
+  display: block;
+  position: relative;
+}
+
+.dashboard .container .acquisitions > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard .container .acquisitions .linechart {
+  position: relative;
+  margin: 1rem 0rem;
+}
+
+.dashboard .container .acquisitions .linechart .first {
+  position: absolute;
+  left: 0%;
+  width: 25%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.dashboard .container .acquisitions .linechart .second {
+  position: absolute;
+  left: 25%;
+  width: 25%;
+  height: 3px;
+  background-color: #da5a5a;
+}
+
+.dashboard .container .acquisitions .linechart .third {
+  position: absolute;
+  left: 50%;
+  width: 25%;
+  height: 3px;
+  background-color: #406fd4;
+}
+
+.dashboard .container .acquisitions .linechart .fourth {
+  position: absolute;
+  left: 75%;
+  width: 25%;
+  height: 3px;
+  background-color: #4ae03c;
+}
+
+.dashboard .container .acquisitions .percentages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .container .acquisitions .percentages .dotcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .container .acquisitions .percentages .dotcontainer .dot {
+  margin-right: 0.5rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.dashboard .container .acquisitions .percentages-1 .dotcontainer .dot {
+  background-color: #ffffff;
+}
+
+.dashboard .container .acquisitions .percentages-2 .dotcontainer .dot {
+  background-color: #da5a5a;
+}
+
+.dashboard .container .acquisitions .percentages-3 .dotcontainer .dot {
+  background-color: #406fd4;
+}
+
+.dashboard .container .acquisitions .percentages-4 .dotcontainer .dot {
+  background-color: #4ae03c;
+}
+
+.profile {
+  width: 100%;
+  height: 100vh;
+  background-color: #01081f;
+}
+
+.profile .portrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem;
+}
+
+.profile .portrait img {
+  margin: 1rem;
+  width: 40%;
+  border-radius: 100%;
+}
+
+.profile .portrait h3, .profile .portrait h4 {
+  margin: 0.5rem;
+}
+
+.profile .chat .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.profile .chat .chat-wrapper .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+}
+
+.profile .chat .chat-wrapper .message img {
+  margin: 0.5rem;
+  width: 10%;
+  border-radius: 100%;
+}
+
+.profile .chat .chat-wrapper .message p {
+  margin: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
